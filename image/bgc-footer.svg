@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1035.44" viewBox="0 0 1400 1035.44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #99cce2;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="bgc-footer" class="cls-1" d="M1000,5532s169.88-79.72,359.46,0c333.54,140.25,353.54,140.02,689.53,0,185.91-77.47,351.01,0,351.01,0V6532H1000V5532Z" transform="translate(-1000 -5496.56)"/>
+</svg>
