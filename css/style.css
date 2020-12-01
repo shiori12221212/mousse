@@ -27,10 +27,37 @@ a{
 .sp{
     display: none;
 }
-.bgc-cleam{
+.bgc-fream{
+    background-color: #fff9ef;
+    position: relative;
+}
+.bgc-cleam{                       /*--画像横いっぱいに広げる方法、下の要素が重ならないようにする、縮小すると隙間ができる--*/
+    position: absolute;
+    bottom:100%;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.bgc-cleam img{
+    width: 100%;
+    vertical-align: top;
+}
+.bgc-fream__2{
+    background-color: #fff;
+    position: relative;
 }
 .bgc-white{
+    position: absolute;
+    bottom:100%;
+    width: 100%;
+    height: auto;
+    text-align: center;
 }
+.bgc-white img{
+    width: 100%;
+    vertical-align: top;
+}
+
 .text-center{
     text-align: center;
 }
@@ -51,7 +78,7 @@ a{
     margin: 0 50px;
 }
 .btn-detail{
-    margin: 80px 0 120px 0;
+    padding: 80px 0 200px 0;
 }
 .btn-item{
     border-bottom:  #666 solid 1px;
@@ -71,12 +98,14 @@ header
 --------------------------------------*/
 .navigation{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     top: 0;
     width: 100%;
-    max-height: 100px;
+    height: 50px;
+    background-color: #99cce2;
     z-index: 1000;
-    background-image: url(../image/bgc-header.svg);
     background-position: bottom;
     background-size: cover;
     color: #fff;
@@ -84,18 +113,28 @@ header
 .navigation a{
     color: #fff;
 }
+.navigation-img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top:  100%;
+    text-align: center;
+}
+.navigation-img img{
+    vertical-align: top;
+    width: 100%;
+}
 .tittle{
-    font-size: 60px;
+    font-size: 5rem;
     letter-spacing: 0.2em;
     line-height: 1;
+    margin-left: 40px;
 }
 .nav-list{
     display: flex;
     text-transform: uppercase;
-    position: fixed;
-    font-size: 1.6rem;
-    right: 40px;
     top: 10px;
+    margin-right: 40px;
 }
 .nav-item img{
     vertical-align: bottom;
@@ -108,10 +147,8 @@ header
     margin-left: 60px;
 }
 
-
-
 /*--------------------------------------
-about
+top-about
 --------------------------------------*/
 .about-list{
     display: flex;
@@ -125,11 +162,11 @@ about
     margin-bottom: auto;
 }
 .about-text{
-    font-size: 24px;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 /*--------------------------------------
-menu
+top-menu
 --------------------------------------*/
 .menu{
     display: flex;
@@ -156,33 +193,100 @@ menu
     font-size: 24px;
 }
 
-
-
-
 /*--------------------------------------
-photo
+top-photo
 --------------------------------------*/
 .photo-top{
     display: flex;
     justify-content: center;
     /* height: 100px; */
 }
-.photo-top__img {
+.photo-top__img {                        /*--paddingのやり方(写真間の余白)--*/
     width: 33.3333%;
     height: 0%;
     padding-top: 33.3333%;
     border-radius: 50%;
-    /* background-color: #666; */
     background-size: cover;
 }
-/* .photo-top img{
-    border-radius: 50%;
-    width: 33.33333%;
-    object-fit: cover;
-} */
-
 /*--------------------------------------
 access
 --------------------------------------*/
-
-
+.map{
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    margin-bottom: 200px;
+}
+.map iframe{
+    position : absolute;
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : 100%;
+}
+/*--------------------------------------
+footer
+--------------------------------------*/
+.footer{
+    background-color: #99cce2;
+    position: relative;
+    color: #fff;
+}
+.footer-bg__img{
+    position: absolute;
+    bottom:100%;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.footer-bg__img img{
+    width: 100%;
+    vertical-align: top;
+}
+.footer-mousse{
+    font-size: 5rem;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+.footer-text{
+    padding: 50px 0 100px 0;
+}
+/*--------------------------------------
+contact・reserve
+--------------------------------------*/
+.contact-reserve{
+    width: 500px;
+    height: 60px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+.contact-reserve img{
+    width: 30px;
+    margin-right: 20px;
+}
+.contact-reserve__inner{
+    color: #fff;
+    width: 49%;
+    height: 100%;
+    background-color: #aadfbf;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-reserve__inner_pink{
+    background-color: #dfafd7;
+}
+.contact-reserve__inner a{
+    color: #fff;
+}

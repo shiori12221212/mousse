@@ -19,62 +19,66 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div>
-        <ul class="hero-image">
-            <li><img src="image/hero-x2.jpg" alt="犬の写真pc"></li>
-            <!--<li><img src="image/hero-x1.jpg" alt="犬の写真pc"></li>
-            <li><img src="image/hero-x3.jpg" alt="犬の写真pc"></li>
-            <li class="sp"><img src="image/hero-y1.jpg" alt="犬の写真sp"></li>
-            <li class="sp"><img src="image/hero-y2.jpg" alt="犬の写真sp"></li>
-            <li class="sp"><img src="image/hero-y3.jpg" alt="犬の写真sp"></li>-->
-        </ul>
-    </div>
 
     <header>
+        <div>
+            <ul class="hero-image">
+                <li><img src="image/hero-x2.jpg" alt="犬の写真pc"></li>
+                <!--<li><img src="image/hero-x1.jpg" alt="犬の写真pc"></li>
+                <li><img src="image/hero-x3.jpg" alt="犬の写真pc"></li>
+                <li class="sp"><img src="image/hero-y1.jpg" alt="犬の写真sp"></li>
+                <li class="sp"><img src="image/hero-y2.jpg" alt="犬の写真sp"></li>
+                <li class="sp"><img src="image/hero-y3.jpg" alt="犬の写真sp"></li>-->
+            </ul>
+        </div>
+    
         <div class="navigation" >
-            <button class="btn-tigger active sp">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
             <p class="tittle">mousse</p>
             <ul class="nav-list">
                 <li class="nav-item active"><a href="./"><img src="icon/肉球のアイコン.png" alt="肉球"> Home</a></li>
                 <li class="nav-item"><a href="about/index.html">About</a></li>
                 <li class="nav-item"><a href="">Menu</a></li>
                 <li class="nav-item"><a href="">Photo</a></li>
-                <li class="nav-item"><a href="">Access</a></li>
             </ul>
+            <button class="sp">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>           
+            <p class="navigation-img">
+                <img src="image/bgc-header.svg" alt="ヘッダー画像">
+            </p>
         </div>
     </header>
 
     <main>
-        <div class="bgc-cleam">
-            <div class="space">
-                <div class="content-tittle text-center">
-                        <h2 class="content-en">About</h2>
-                        <h3 class="content-ja">当店について</h3>
+    <div class="bgc-fream">
+        <div class="bgc-cleam"><img src="image/bgc-cl.svg" alt=""></div>
+        <div class="space">
+            <div class="content-tittle text-center">
+                    <h2 class="content-en">About</h2>
+                    <h3 class="content-ja">当店について</h3>
+            </div>
+            <div class="about-list">
+                <div class="about-parts text-center">
+                    <p class="about-text">mousseはさいたま市浦和区にある<br>
+                    ワンちゃん専門トリミングサロンです。</p>
+                    <p>mousseでは
+                    「飼い主様とワンちゃんの生活をトータルでサポートする」<br>
+                    ことを心がけています。
+                    理想のスタイルがある方はもちろん<br>
+                    どのようにすればいいかわからないという方まで是非お任せください。</p>
                 </div>
-                <div class="about-list">
-                    <div class="about-parts text-center">
-                        <p class="about-text">mousseはさいたま市浦和区にある<br>
-                        ワンちゃん専門トリミングサロンです。</p>
-                        <p>mousseでは
-                        「飼い主様とワンちゃんの生活をトータルでサポートする」<br>
-                        ことを心がけています。
-                        理想のスタイルがある方はもちろん<br>
-                        どのようにすればいいかわからないという方まで是非お任せください。</p>
-                    </div>
-                    <img class="about-parts" src="image/shop-v2.jpg" alt="お店の写真">
-                </div>
-                <div class="btn-detail text-center">
-                <a class="btn-item" href="about/index.html"><img class="btn-niku" src="icon/肉球のアイコン.png" alt="肉球">詳細はこちら</a>
-                </div>
+                <img class="about-parts" src="image/shop-v2.jpg" alt="お店の写真">
+            </div>
+            <div class="btn-detail text-center">
+            <a class="btn-item" href="about/index.html"><img class="btn-niku" src="icon/肉球のアイコン.png" alt="肉球">詳細はこちら</a>
             </div>
         </div>
-        </div>
+    </div>
 
-        <div class="bgc-white">
+    <div class="bgc-fream__2">
+        <p class="bgc-white"><img src="image/bgc-wh.svg" alt=""></p>
             <div class="space">
                 <div class="content-tittle text-center">
                     <h2 class="content-en">Menu</h2>
@@ -107,53 +111,62 @@
                     <a class="btn-item"　href="about.html"><img class="btn-niku" src="icon/肉球のアイコン.png" alt="肉球">詳細はこちら</a>
                 </div>
             </div>
-        </div>
-        <div class="bgc-cleam bgc-cleam_2">
-            <div class="space">    
-                <div class="content-tittle text-center">
-                    <h2 class="content-en">Photo</h2>
-                    <h3 class="content-ja">写真</h3>
-                </div>
-                <div class="photo-top">
-                    <div class="photo-top__img" style="background-image: url('/image/1.jpg');"></div>
-                    <div class="photo-top__img" style="background-image: url('/image/2.jpg');"></div>
-                    <div class="photo-top__img" style="background-image: url('/image/3.jpg');"></div>
-                    <!-- <img src="image/1.jpg" alt="">
-                    <img src="image/2.jpg" alt="">
-                    <img src="image/3.jpg" alt=""></div> -->
-                    <!--<img src="image/4.jpg" alt="">
-                    <img src="image/5.jpg" alt="">
-                    <img src="image/6.jpg" alt="">-->
-                
+        
+    </div>
+
+    <div class="bgc-fream">
+        <div class="bgc-cleam"><img src="image/bgc-cl.svg" alt=""></div>
+        <div class="space">    
+            <div class="content-tittle text-center">
+                <h2 class="content-en">Photo</h2>
+                <h3 class="content-ja">写真</h3>
+            </div>
+            <div class="photo-top">
+                <div class="photo-top__img" style="background-image: url(/image/1.jpg);"></div>
+                <div class="photo-top__img" style="background-image: url(/image/2.jpg);"></div>
+                <div class="photo-top__img" style="background-image: url(/image/3.jpg);"></div>
+                <!--<img src="image/4.jpg" alt="">
+                <img src="image/5.jpg" alt="">
+                <img src="image/6.jpg" alt="">-->
+            </div>
+            <div class="btn-detail text-center">
+                <a class="btn-item"　href="about.html"><img class="btn-niku" src="icon/肉球のアイコン.png" alt="肉球">詳細はこちら</a>
             </div>
         </div>
+    </div>
 
 
         <div class="space">
-            <div class="btn-detail text-center">
-                <a class="btn-item"　href="about.html"><img class="btn-niku" src="icon/肉球のアイコン.png" alt="肉球">詳細はこちら</a>
-                </div>
-    
-
             <div class="content-tittle text-center">
                 <h2 class="content-en">Access</h2>
                 <h3 class="content-ja">場所</h3>
             </div>
             <div class="map">
-                <div class="map-inner">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4051.9750630459716!2d139.64908278443576!3d35.85915113886524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x28bb865baa3d4d96!2z5bi455uk5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1606549406962!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4051.9750630459716!2d139.64908278443576!3d35.85915113886524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x28bb865baa3d4d96!2z5bi455uk5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1606549406962!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
     </main>
 
     <footer>
-    <p>mousse</p>
-    <p>休業日：月・火・祝日<br>営業時間：10時〜18時</p>
-    <p>埼玉県さいたま市浦和区1−2−3<br>048-1234-5678</p>
+        <div class="footer text-center">
+            <div class="footer-bg__img"><img src="image/bgc-footer.svg" alt="フッター背景"> </div>
+            <p class="footer-mousse">mousse</p>
+            <p>休業日：月・火・祝日<br>営業時間：10時〜18時</p>
+            <p class="footer-text">埼玉県さいたま市浦和区1−2−3<br>048-1234-5678</p>
+        </div>
     </footer> 
     
-    <a href="contact/index.html"><img src="icon/メールのアイコン.png" alt="メールのアイコン">お問い合わせ</a>
-    <a href="https://petlife.asia/salon/"><img src="icon/カレンダーのフリーアイコン.png" alt="カレンダーのアイコン">予約する</a>
+    <div class="contact-reserve">
+        <div class="contact-reserve__inner">
+            <a href="contact/index.html">
+                <span><img src="icon/メールのアイコン.png" alt="メールのアイコン"></span><span>お問い合わせ</span>
+            </a>
+        </div>
+        <div class="contact-reserve__inner contact-reserve__inner_pink">
+            <a href="https://petlife.asia/salon/">
+                <img src="icon/カレンダーのフリーアイコン.png" alt="カレンダーのアイコン">予約する
+            </a>
+        </div>
+    </div>
 </body>
 </html>
