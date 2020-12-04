@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="750" height="73.063" viewBox="0 0 750 73.063">
+<svg xmlns="http://www.w3.org/2000/svg" width="1399" height="142.438" viewBox="0 0 1399 142.438">
   <defs>
     <style>
       .cls-1 {
@@ -7,5 +7,5 @@
       }
     </style>
   </defs>
-  <path id="haikei-bl" class="cls-1" d="M0,22s95.964-46.038,194.724,0c138.282,64.462,229.4,65.891,363.538,0C654.75-25.4,750,22,750,22V74H0V22Z" transform="translate(0 -0.938)"/>
+  <path id="長方形_8" data-name="長方形 8" class="cls-1" d="M1,36s169.884-79.715,359.457,0C694,176.255,714,176.021,1049.99,36,1235.9-41.474,1401,36,1401,36V143H1V36Z" transform="translate(-1 -0.563)"/>
 </svg>

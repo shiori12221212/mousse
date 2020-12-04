@@ -31,7 +31,7 @@ a{
     background-color: #fff9ef;
     position: relative;
 }
-.bgc-cleam{                       /*--画像横いっぱいに広げる方法、下の要素が重ならないようにする、縮小すると隙間ができる--*/
+.bgc-cleam{                       /*--縮小すると隙間ができる--*/
     position: absolute;
     bottom:100%;
     width: 100%;
@@ -41,6 +41,10 @@ a{
 .bgc-cleam img{
     width: 100%;
     vertical-align: top;
+}
+.bgc-cleam__all{
+    background-color: #fff9ef;
+    padding-bottom: 120px;
 }
 .bgc-fream__2{
     background-color: #fff;
@@ -289,4 +293,40 @@ contact・reserve
 }
 .contact-reserve__inner a{
     color: #fff;
+}
+/*-------------------------------------------------------------------------------------------
+about-page
+---------------------------------------------------------------------------------------------*/
+.about-frame{
+    display: flex;
+    margin-bottom: 120px;
+}
+.about-frame:nth-child(odd){
+    flex-direction: row-reverse;
+}
+.about-text{
+    width: 50%;
+    padding-right: 50px;
+    font-size: 1.6rem;
+}
+.about-text__right{
+    padding: 0 0 0 50px;
+}
+.about-tittle{
+    font-size: 3rem;
+}
+.about-number{
+    font-size: 6rem;
+    color: #99cce2;
+    font-style: italic;
+    padding-right: 10px;
+}
+.about-content{
+    padding-left: 40px;
+}
+.about-img{
+    width: 50%;
+}
+.about-img img{
+    border-radius: 10px;
 }
