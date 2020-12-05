@@ -31,7 +31,7 @@ a{
     background-color: #fff9ef;
     position: relative;
 }
-.bgc-cleam{                       /*--縮小すると隙間ができる--*/
+.bgc-cleam{
     position: absolute;
     bottom:100%;
     width: 100%;
@@ -41,6 +41,7 @@ a{
 .bgc-cleam img{
     width: 100%;
     vertical-align: top;
+    margin-bottom: -1px;
 }
 .bgc-cleam__all{
     background-color: #fff9ef;
@@ -60,6 +61,7 @@ a{
 .bgc-white img{
     width: 100%;
     vertical-align: top;
+    margin-bottom: -1px;
 }
 
 .text-center{
@@ -247,6 +249,7 @@ footer
 .footer-bg__img img{
     width: 100%;
     vertical-align: top;
+    margin-bottom: -1px;
 }
 .footer-mousse{
     font-size: 5rem;
@@ -259,9 +262,8 @@ footer
 /*--------------------------------------
 contact・reserve
 --------------------------------------*/
-.contact-reserve{
-    width: 500px;
-    height: 60px;
+.contact-reserve{/* 天地中央合わせ */
+    width:500px;height: 60px;
     background-color: #fff;
     position: fixed;
     bottom: 0;
@@ -287,12 +289,15 @@ contact・reserve
     display: flex;
     align-items: center;
     justify-content: center;
+    line-height: 1;
 }
 .contact-reserve__inner_pink{
     background-color: #dfafd7;
 }
 .contact-reserve__inner a{
     color: #fff;
+    display: flex;
+    align-items: center;
 }
 /*-------------------------------------------------------------------------------------------
 about-page
@@ -304,7 +309,7 @@ about-page
 .about-frame:nth-child(odd){
     flex-direction: row-reverse;
 }
-.about-text{
+.about-inner{
     width: 50%;
     padding-right: 50px;
     font-size: 1.6rem;
@@ -329,4 +334,25 @@ about-page
 }
 .about-img img{
     border-radius: 10px;
+}
+/*-------------------------------------------------------------------------------------------
+menu-page
+---------------------------------------------------------------------------------------------*/
+.menu{
+    display: flex;
+    margin-bottom: 100px;
+}
+.menu-item__inner{
+    width: 45%;
+    border: #666 solid 1px;
+    border-radius: 10px;
+    padding: 40px;
+
+}
+.menu-item__tittle{
+    margin-bottom: 40px;
+
+}
+.menu-item__course{
+    font-size: 2.4rem;
 }
