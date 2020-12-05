@@ -204,13 +204,13 @@ top-photo
 --------------------------------------*/
 .photo-top{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     /* height: 100px; */
 }
 .photo-top__img {                        /*--paddingのやり方(写真間の余白)--*/
-    width: 33.3333%;
+    width: 31.3333%;
     height: 0%;
-    padding-top: 33.3333%;
+    padding-top: 31.3333%;
     border-radius: 50%;
     background-size: cover;
 }
@@ -262,7 +262,7 @@ footer
 /*--------------------------------------
 contact・reserve
 --------------------------------------*/
-.contact-reserve{/* 天地中央合わせ */
+.contact-reserve{
     width:500px;height: 60px;
     background-color: #fff;
     position: fixed;
@@ -355,4 +355,36 @@ menu-page
 }
 .menu-item__course{
     font-size: 2.4rem;
+}
+/*-------------------------------------------------------------------------------------------
+photo-page
+---------------------------------------------------------------------------------------------*/
+/* photo-top
+　　photo-top__img  topページで使用*/
+.photo{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.photo-frame{
+    width: 31.33333%;
+    padding: 20px;
+    margin-bottom: 80px;
+    background-color: #fff;
+    border: #666 solid 1px;
+}
+.photo-item__name{
+    font-style: italic;
+    padding-top: 20px;
+}
+.photo-item{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.photo-item__icon{
+   padding-right: 10px;
+}
+.photo-item__review{
+    font-size: 1.4rem;
 }
