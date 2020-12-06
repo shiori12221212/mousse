@@ -37,11 +37,11 @@ a{
     width: 100%;
     height: auto;
     text-align: center;
+    margin-bottom: -1px;
 }
 .bgc-cleam img{
     width: 100%;
     vertical-align: top;
-    margin-bottom: -1px;
 }
 .bgc-cleam__all{
     background-color: #fff9ef;
@@ -57,11 +57,11 @@ a{
     width: 100%;
     height: auto;
     text-align: center;
+    margin-bottom: -1px;
 }
 .bgc-white img{
     width: 100%;
     vertical-align: top;
-    margin-bottom: -1px;
 }
 
 .text-center{
@@ -159,6 +159,7 @@ top-about
 .about-list{
     display: flex;
     justify-content: space-around;
+    flex-flow: row-reverse;
 }
 .about-parts{
     width: 50%;
@@ -306,7 +307,7 @@ about-page
     display: flex;
     margin-bottom: 120px;
 }
-.about-frame:nth-child(odd){
+.about-frame:nth-child(even){
     flex-direction: row-reverse;
 }
 .about-inner{
@@ -356,6 +357,50 @@ menu-page
 .menu-item__course{
     font-size: 2.4rem;
 }
+table{
+    width:calc(100% - 100px);
+    margin: 0 50px 80px;
+}
+th{
+    border-top:solid #666 1px ;
+    border-bottom: solid #666 1px;
+    text-align: center;
+    padding: 5px 0;
+}
+tr{
+    padding: 5px 0;
+}
+tr:nth-child(even){
+    background-color: #fff9ef;
+}
+tr:last-child{
+    border-bottom: solid #666 1px;
+}
+tr td{
+    text-align: center;
+}
+td{
+    padding: 5px 0;
+    width: 33.33333%;
+}
+.coupon{
+    margin: auto;
+    width: 500px;
+    border: #666 1px solid;
+    border-radius: 10px;
+}
+.coupon-tittle{
+    font-size: 2.4rem;
+}
+.coupon-10{
+    font-size: 3rem;
+    color: #ff0000;
+    font-weight: bold;
+    font-style: italic;
+}
+.menu-ps{
+    padding: 80px 0 240px;
+}
 /*-------------------------------------------------------------------------------------------
 photo-page
 ---------------------------------------------------------------------------------------------*/
@@ -375,10 +420,10 @@ photo-page
 }
 .photo-item__name{
     font-style: italic;
-    padding-top: 20px;
+    padding-top: 5px;
 }
 .photo-item{
-    padding-top: 10px;
+    padding-top: 5px;
     display: flex;
     align-items: center;
 }
@@ -387,4 +432,181 @@ photo-page
 }
 .photo-item__review{
     font-size: 1.4rem;
+}
+/*-------------------------------------------------------------------------------------------
+-785px以下
+---------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 785px) {
+/*-------------------------------------------------------------------------------------------
+base setting sp
+---------------------------------------------------------------------------------------------*/
+    .cp{
+        display: none;
+    }
+    .sp{
+        display:block;
+    }
+    .space{
+        margin: 0 30px;
+    }
+    .bgc-cleam,.bgc-white{
+        width: 101%;
+    }
+    .bgc-cleam__all{
+        padding-bottom: 100px;
+    }
+    .tittle{
+        margin: 0;
+        font-size: 3rem;
+        text-align: center;
+    }
+    .content-tittle{
+        padding: 40px 0;
+    }
+    .navigation{
+        position: relative;
+        display: block;
+    }
+    .ham-frame{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 10px;
+    }
+    .ham{
+        position: relative;
+        width: 40px;
+        height: 40px;
+    }.ham-line{
+        position: absolute;
+        left: 10px;
+        width: 25px;
+        height: 1px;
+        background-color: #fff;
+        transition: all 0.3s;
+    }
+    .ham-line:nth-child(1){
+        top: 10px;
+    }
+    .ham-line:nth-child(2){
+        top: 20px;
+    }
+    .ham-line:nth-child(3){
+        top: 30px;
+    }
+    .clicked .ham-line:nth-child(1) {
+        transform: rotate(45deg);
+        top: 10px;
+    }
+    .clicked .ham-line:nth-child(2) {
+        width: 0px;
+    }
+    .clicked .ham_line:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 10px;
+    }
+    .btn-detail{
+        padding: 30px 0 100px;
+    }
+    .footer-mousse{
+        padding-top: 20px;
+        font-size: 3rem;
+    }
+    .footer-text{
+        padding-top: 20px;
+    }
+    .contact-reserve{
+        width: 100%;
+        border-radius: 0;
+    }
+/*-------------------------------------------------------------------------------------------
+about-sp
+---------------------------------------------------------------------------------------------*/
+    .about-list{
+        display: block;
+    }
+    .about-parts{
+        width: 100%;
+        margin: 0;
+    }
+    .about-parts:first-child{
+        margin-bottom: 30px 0;
+    }
+    .about-text{
+        margin-top: 30px;
+    }
+/*-------------------------------------------------------------------------------------------
+menu-sp
+---------------------------------------------------------------------------------------------*/
+    .menu{
+        margin: 0;
+    }
+    .menu-list{
+        width: 100%;
+        margin: 0;
+    }
+/*-------------------------------------------------------------------------------------------
+map-sp
+---------------------------------------------------------------------------------------------*/
+    .map{
+        padding-bottom: 75%;
+        margin-bottom: 100px;
+    }
+/*-------------------------------------------------------------------------------------------
+about-page__sp
+---------------------------------------------------------------------------------------------*/
+    .about-frame{
+        display: block;
+    }
+    .about-inner {
+        width: 100%;
+        padding: 0 0 60px;
+    }
+    .about-inner__3{
+        padding: 0;
+    }
+    .about-img{
+        width: 100%;
+    }
+    .about-content{
+        padding: 0;
+    }
+    .about-number{
+        font-size: 3.6rem;
+    }
+    .about-tittle{
+        font-size: 2rem;
+    }
+/*-------------------------------------------------------------------------------------------
+about-page__sp
+---------------------------------------------------------------------------------------------*/
+    .menu{
+        display: block;
+    }
+    .menu-item__inner{
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .icon img{
+        width: 30px;
+        height: 30px;
+    }
+    .menu-item__tittle{
+        margin-bottom: 20px;
+        line-height: 1;
+    }
+    table{
+        margin: 20px 0;
+        width: 100%;
+    }
+    .table-sp{
+        margin: 40px 0;
+    }
+    .coupon{
+        width: 100%;
+    }
+    .menu-ps{
+        padding: 40px 0 100px;
+    }
 }

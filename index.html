@@ -21,34 +21,37 @@
 <body>
 
     <header>
-        <div>
-            <ul class="hero-image">
-                <li><img src="image/hero-x2.jpg" alt="犬の写真pc"></li>
-                <!--<li><img src="image/hero-x1.jpg" alt="犬の写真pc"></li>
-                <li><img src="image/hero-x3.jpg" alt="犬の写真pc"></li>
-                <li class="sp"><img src="image/hero-y1.jpg" alt="犬の写真sp"></li>
-                <li class="sp"><img src="image/hero-y2.jpg" alt="犬の写真sp"></li>
-                <li class="sp"><img src="image/hero-y3.jpg" alt="犬の写真sp"></li>-->
-            </ul>
-        </div>
     
         <div class="navigation" >
             <p class="tittle">mousse</p>
-            <ul class="nav-list">
+            <ul class="nav-list cp">
                 <li class="nav-item active"><a href="./"><img src="icon/肉球のアイコン.png" alt="肉球"> Home</a></li>
                 <li class="nav-item"><a href="about/index.html">About</a></li>
                 <li class="nav-item"><a href="menu/index.html">Menu</a></li>
                 <li class="nav-item"><a href="photo/index.html">Photo</a></li>
             </ul>
-            <button class="sp">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>           
+            <div class="ham-frame">
+                <div class="sp ham" id="ham">
+                    <span class="ham-line"></span>
+                    <span class="ham-line"></span>
+                    <span class="ham-line"></span>
+                </div>
+            </div>           
             <p class="navigation-img">
                 <img src="image/bgc-header.svg" alt="ヘッダー画像">
             </p>
         </div>
+        <div>
+            <ul class="hero-image">
+                <li class="cp"><img src="image/hero-x2.jpg" alt="犬の写真pc"></li>
+                <!-- <li class="cp"><img src="image/hero-x1.jpg" alt="犬の写真pc"></li>
+                <li class="cp"><img src="image/hero-x3.jpg" alt="犬の写真pc"></li> -->
+                <li class="sp"><img src="image/hero-y1.jpg" alt="犬の写真sp"></li>
+                <!-- <li class="sp"><img src="image/hero-y2.jpg" alt="犬の写真sp"></li>
+                <li class="sp"><img src="image/hero-y3.jpg" alt="犬の写真sp"></li> -->
+            </ul>
+        </div>
+
     </header>
 
     <main>
@@ -60,8 +63,9 @@
                     <h3 class="content-ja">当店の特徴</h3>
             </div>
             <div class="about-list">
+                <img class="about-parts" src="image/shop-v2.jpg" alt="お店の写真">
                 <div class="about-parts text-center">
-                    <p class="about-text">mousseはさいたま市浦和区にある<br>
+                    <p class="about-text">mousseはさいたま市浦和区の<br>
                     ワンちゃん専門トリミングサロンです。</p>
                     <p>mousseでは
                     「飼い主様とワンちゃんの生活をトータルでサポートする」<br>
@@ -69,7 +73,6 @@
                     理想のスタイルがある方はもちろん<br>
                     どのようにすればいいかわからないという方まで是非お任せください。</p>
                 </div>
-                <img class="about-parts" src="image/shop-v2.jpg" alt="お店の写真">
             </div>
             <div class="btn-detail text-center">
             <a class="btn-item" href="about/index.html"><img class="btn-niku" src="icon/肉球のアイコン.png" alt="肉球">詳細はこちら</a>
@@ -92,14 +95,14 @@
                         <dd class="menu-item_prace">￥3,000〜</dd>
                         <dd>(犬種・体格によって変わります)</dd>
                     </dl>
-                    <dl class="menu-list text-center">
+                    <dl class="menu-list text-center cp">
                         <dt class="menu-item_course">トリミングコース</dt>
                         <dd class="icon"><img src="icon/ヘアサロンアイコン.png"></dd>
                         <dd class="menu-item_content">シャンプーコース<br>＋<br>全身カット</dd>
                         <dd class="menu-item_prace">￥5,200〜</dd>
                         <dd>(犬種・体格によって変わります)</dd>
                     </dl>
-                    <dl class="menu-list text-center">
+                    <dl class="menu-list text-center cp">
                         <dt class="menu-item_course">オプション</dt>
                         <dd class="icon"><img src="icon/泡のアイコン.png"></dd>
                         <dd class="menu-item_content">薬用シャンプー<br>オゾンシャワー<br>歯磨き</dd>
@@ -170,5 +173,7 @@
             </a>
         </div>
     </div>
+    <script>
+    </script>
 </body>
 </html>
