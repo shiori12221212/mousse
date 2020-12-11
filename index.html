@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -30,13 +31,19 @@
                 <li class="nav-item"><a href="menu/index.html">Menu</a></li>
                 <li class="nav-item"><a href="photo/index.html">Photo</a></li>
             </ul>
-            <div class="ham-frame">
-                <div class="sp ham" id="ham">
+            <ul class="nav-list__sp text-center">
+                <li class="nav-item"><a href="./"> Home</a></li>
+                <li class="nav-item"><a href="about/index.html">About</a></li>
+                <li class="nav-item"><a href="menu/index.html">Menu</a></li>
+                <li class="nav-item"><a href="photo/index.html">Photo</a></li>
+            </ul>
+            <div class="ham-frame sp">
+                <div class="ham">
                     <span class="ham-line"></span>
                     <span class="ham-line"></span>
                     <span class="ham-line"></span>
                 </div>
-            </div>           
+            </div>
             <p class="navigation-img">
                 <img src="image/bgc-header.svg" alt="ヘッダー画像">
             </p>
@@ -51,9 +58,9 @@
                 <li class="sp"><img src="image/hero-y3.jpg" alt="犬の写真sp"></li> -->
             </ul>
         </div>
-
     </header>
 
+    
     <main>
     <div class="bgc-fream">
         <div class="bgc-cleam"><img src="image/bgc-cl.svg" alt=""></div>
@@ -173,7 +180,16 @@
             </a>
         </div>
     </div>
-    <script>
-    </script>
+<script>
+    $(function(){
+        $('.nav-list__sp').hide();
+        $('.ham').click(function(){
+            $('.nav-list__sp').slideToggle(400);
+        });
+        $('.ham').on('click',function(){
+            $(this).toggleClass('clicked');
+        });
+    });
+</script>
 </body>
 </html>

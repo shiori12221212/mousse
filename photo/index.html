@@ -17,23 +17,33 @@
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 <body>
 <header>
     <div class="navigation" >
         <p class="tittle">mousse</p>
-        <ul class="nav-list">
+        <ul class="nav-list cp">
             <li class="nav-item"><a href="../index.html">Home</a></li>
-            <li class="nav-item"><a href="../index.html"> About</a></li>
+            <li class="nav-item"><a href="../photo/index.html"> About</a></li>
             <li class="nav-item"><a href="../menu/index.html">Menu</a></li>
             <li class="nav-item active"><a href="./"><img src="../icon/肉球のアイコン.png" alt="肉球">Photo</a></li>
         </ul>
-        <button class="sp">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>           
-        <p class="navigation-img">
+        <ul class="nav-list__sp text-center">
+            <li class="nav-item"><a href="../index.html"> Home</a></li>
+            <li class="nav-item"><a href="../about/index.html">About</a></li>
+            <li class="nav-item"><a href="../menu/index.html">Menu</a></li>
+            <li class="nav-item"><a href="./index.html">Photo</a></li>
+        </ul>
+        <div class="ham-frame sp">
+            <div class="ham">
+                <span class="ham-line"></span>
+                <span class="ham-line"></span>
+                <span class="ham-line"></span>
+            </div>
+        </div>
+    <p class="navigation-img">
             <img src="../image/bgc-header.svg" alt="ヘッダー画像">
         </p>
     </div>
@@ -46,7 +56,7 @@
                 <h2 class="content-en">Photo</h2>
                 <h3 class="content-ja">写真</h3>
             </div>
-            <div class="photo">
+            <div class="photo cp">
                 <div class="photo-frame">
                     <p><img src="../image/photo-1.jpg" alt="犬の写真"></p>
                     <p class="text-center photo-item__name">犬種</p>
@@ -102,6 +112,27 @@
                     <p class="sp">×Close</p>
                 </div>
             </div>
+            <div class="photo-top">
+                <div  class="photo-top__frame">
+                    <div class="photo-top__img"><img src="../image/photo-1.jpg" alt=""></div>
+                </div>
+                <div class="photo-top__frame">
+                    <div class="photo-top__img"><img src="../image/photo-2.jpg" alt=""></div>
+                </div>
+                <div class="photo-top__frame">
+                    <div class="photo-top__img"><img src="../image/photo-3.jpg" alt=""></div>
+                </div>
+                <div class="photo-top__frame">
+                    <div class="photo-top__img"><img src="../image/photo-4.jpg" alt=""></div>
+                </div>
+                <div class="photo-top__frame">
+                    <div class="photo-top__img"><img src="../image/photo-5.jpg" alt=""></div>
+                </div>
+                <div class="photo-top__frame">
+                    <div class="photo-top__img"><img src="../image/photo-6.jpg" alt=""></div>
+                </div>
+            </div>
+
         </div>
     </div>
 </main>
@@ -127,5 +158,17 @@
         </a>
     </div>
 </div>
+<script>
+    $(function(){
+        $('.nav-list__sp').hide();
+        $('.ham').click(function(){
+            $('.nav-list__sp').slideToggle(400);
+        });
+        $('.ham').on('click',function(){
+            $(this).toggleClass('clicked');
+        });
+    });
+</script>
+
 </body>
 </html>

@@ -19,7 +19,8 @@ base setting
 }
 img{
 	max-width: 100%;
-	height:auto;
+    height:auto;
+    vertical-align: top;
 }
 a{
     color:#666;
@@ -467,6 +468,29 @@ base setting sp
         position: relative;
         display: block;
     }
+    .nav-list__sp{
+        background-color: #fff;
+        opacity: 0.8;
+        width: 100%;
+        z-index: 1100;
+        position: fixed;
+        position: absolute;
+        top: 0;
+    }
+    .nav-list__sp a{
+        color: #666;
+    }
+    .nav-item{
+        text-transform: uppercase;
+        margin-left: 0;
+        margin-bottom: 80px;
+    }
+    .nav-item:first-of-type{
+        margin-top: 100px;
+    }
+    .nav-item:last-of-type{
+        margin-bottom: 100px;
+    }
     .ham-frame{
         position: absolute;
         top: 0;
@@ -494,19 +518,25 @@ base setting sp
     .ham-line:nth-child(3){
         top: 30px;
     }
-    .clicked .ham-line:nth-child(1) {
-        transform: rotate(45deg);
-        top: 10px;
+    .ham.clicked span{
+        background-color:#666;
+        z-index: 1100;
     }
-    .clicked .ham-line:nth-child(2) {
-        width: 0px;
+    .ham.clicked span:nth-of-type(1){
+        transform: translateY(10px) rotate(-315deg);
     }
-    .clicked .ham_line:nth-child(3) {
-        transform: rotate(-45deg);
-        top: 10px;
+    .ham.clicked span:nth-of-type(2){
+        opacity: 0;
+    }
+    .ham.clicked span:nth-of-type(3){
+        transform: translateY(-10px) rotate(315deg);
     }
     .btn-detail{
         padding: 30px 0 100px;
+    }
+    .hero-image{
+        height: 550px;
+        width: auto;
     }
     .footer-mousse{
         padding-top: 20px;
@@ -578,7 +608,7 @@ about-page__sp
         font-size: 2rem;
     }
 /*-------------------------------------------------------------------------------------------
-about-page__sp
+menu-page__sp
 ---------------------------------------------------------------------------------------------*/
     .menu{
         display: block;
@@ -609,4 +639,23 @@ about-page__sp
     .menu-ps{
         padding: 40px 0 100px;
     }
+}
+/*-------------------------------------------------------------------------------------------
+photo-page__sp
+---------------------------------------------------------------------------------------------*/
+.photo-top{
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+.photo-top__frame{
+    width: 47%;
+    margin-bottom: 10%;
+}
+.photo-top__img{
+    width: auto;
+    padding: 0;
+}
+.photo-top__img img{
+    border-radius: 50%;
 }
