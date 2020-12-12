@@ -90,6 +90,12 @@ a{
 .btn-item{
     border-bottom:  #666 solid 1px;
     padding: 0 10px 10px 10px;
+    display: block;
+    width: 200px;
+    margin: auto;
+}
+.btn-item:hover{
+    transform: scale(1.1);
 }
 .btn-niku{
     padding-right: 15px;
@@ -101,7 +107,7 @@ a{
     margin: auto;
 }
 /*--------------------------------------
-header
+nav
 --------------------------------------*/
 .navigation{
     display: flex;
@@ -153,7 +159,6 @@ header
 .nav-item{
     margin-left: 60px;
 }
-
 /*--------------------------------------
 top-about
 --------------------------------------*/
@@ -301,6 +306,9 @@ contact・reserve
     display: flex;
     align-items: center;
 }
+.co-re__btn{
+    display: block;
+}
 /*-------------------------------------------------------------------------------------------
 about-page
 ---------------------------------------------------------------------------------------------*/
@@ -341,12 +349,13 @@ about-page
 /*-------------------------------------------------------------------------------------------
 menu-page
 ---------------------------------------------------------------------------------------------*/
-.menu{
+.menu-page{
     display: flex;
     margin-bottom: 100px;
+    justify-content: space-between;
 }
 .menu-item__inner{
-    width: 45%;
+    width: 48%;
     border: #666 solid 1px;
     border-radius: 10px;
     padding: 40px;
@@ -602,9 +611,6 @@ about-page__sp
     .about-img{
         width: 100%;
     }
-    .about-inner:last-of-type{
-        padding: 0;
-    }
     .about-content{
         padding: 0;
     }
@@ -617,8 +623,9 @@ about-page__sp
 /*-------------------------------------------------------------------------------------------
 menu-page__sp
 ---------------------------------------------------------------------------------------------*/
-    .menu{
+    .menu-page{
         display: block;
+        margin: 0;
     }
     .menu-item__inner{
         width: 100%;
